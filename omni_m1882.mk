@@ -35,3 +35,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=m1882 \
     BUILD_PRODUCT=m1882 \
     PRODUCT_NAME=m1882
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.treble.enabled=true \
+    sys.usb.controller=a600000.dwc3 \
+    persist.sys.usb.config=mtp \
+    persist.service.adb.enable=1 \
+    persist.service.debuggable=1 \
+    sys.usb.rndis.func.name=gsi \
+    sys.usb.rmnet.func.name=gsi
